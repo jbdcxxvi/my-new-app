@@ -1,0 +1,46 @@
+{
+  "name": "my-new-app",
+  "version": "1.0.0",
+  "description": "anything goes app",
+  "main": "index.tsx",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbdcxxvi/my-new-app.git"
+  },
+  "keywords": [
+    "python",
+    "node",
+    "react",
+    "app"
+  ],
+  "author": "jbdelacruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbdcxxvi/my-new-app/issues"
+  },
+  "homepage": "https://github.com/jbdcxxvi/my-new-app#readme",
+  "dependencies": {
+    "@types/react": "^18.2.75",
+    "@types/react-dom": "^18.2.24",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.4"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "react-router-dom": "^6.22.3",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}

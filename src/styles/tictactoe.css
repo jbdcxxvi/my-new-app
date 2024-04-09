@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.square {
+    width: 80px; /* Adjust size for mobile */
+    height: 80px; /* Adjust size for mobile */
+    font-size: 2rem; /* Adjust font size for mobile */
+    text-align: center;
+    line-height: 80px; /* Adjust line height for mobile */
+    cursor: pointer;
+}
+.container {
+    margin-top: 50px;
+    position: relative;
+}
+.col {
+    padding: 0; /* Remove padding between columns */
+}
+.current-player{
+    max-width: 80%; 
+    max-height: 80%;
+}
+.current-player-small{
+    max-width: 50px; 
+    max-height: 50px;
+}
+.honk-tic-tac-toe-title
+{
+    font-family:fantasy;
+}
+.grid-container {
+    display: grid;
+    place-items: center; /* This centers the grid items both horizontally and vertically */
+}
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
