@@ -8,19 +8,7 @@ import TicTacToe from './pages/TicTacToe';
 import SQL from './pages/SQL';
 // import reportWebVitals from './reportWebVitals';
 import PythonApp from './pages/PythonApp';
-import ErrorPage from './ErrorPage';
-
-const routeApp = createBrowserRouter([{
-  path: "/",
-  element: <App/>,
-  errorElement: <ErrorPage />,
-},]);
-
-const routeTicTacToe = createBrowserRouter([{
-  path: "/pages/TicTacToe",
-  element: <TicTacToe />,
-  errorElement: <ErrorPage/>,
-},]);
+//import ErrorPage from './error-page';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
@@ -28,8 +16,8 @@ root.render(
 <React.StrictMode>
     <Router>
       <Routes>
-        <RouterProvider router={routeApp} />
-        <RouterProvider router={routeTicTacToe} />
+        <Route path="/" element={<App />} />
+        <Route path="/pages/TicTacToe" element={<TicTacToe />}/>
         <Route path="/pages/SQL" element={<SQL />} />
         <Route path="/pages/PythonApp" element={<PythonApp />}/>
         {/* Define other routes here */}
