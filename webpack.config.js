@@ -1,15 +1,18 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const history = require('connect-history-api-fallback');
 
 module.exports = {
     entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: './bundle.js',
     },
     devServer: {
         // contentBase: './dist',
-        static: './',
+        static: './ ',
+        open: true, // Open the default browser when the server starts (optional)
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.json'],
@@ -25,10 +28,6 @@ module.exports = {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
-            // { 
-            //     test: /\\.(png|jp(e*)g|svg|gif)$/, 
-            //     use: ['file-loader'], 
-            // },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
                 use: [
@@ -45,6 +44,7 @@ module.exports = {
         ],
     },
     plugins: [
+        // new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html',
         }),
